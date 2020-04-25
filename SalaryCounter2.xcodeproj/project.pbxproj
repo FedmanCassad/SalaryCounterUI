@@ -10,7 +10,7 @@
 		DBB30CEA244EB740007B304E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB30CE9244EB740007B304E /* EditViewController.swift */; };
 		DBB30CEC244EBB82007B304E /* SalaryTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB30CEB244EBB82007B304E /* SalaryTimer.swift */; };
 		DBB30CEE244EBBB8007B304E /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB30CED244EBBB8007B304E /* Interface.swift */; };
-		DBD63E0C2449221A00F678A8 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD63E0B2449221A00F678A8 /* TimeModel.swift */; };
+		DBD63E0C2449221A00F678A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD63E0B2449221A00F678A8 /* Extensions.swift */; };
 		DBDBFDC72448F237009F917C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBFDC62448F237009F917C /* AppDelegate.swift */; };
 		DBDBFDC92448F237009F917C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBFDC82448F237009F917C /* SceneDelegate.swift */; };
 		DBDBFDCB2448F237009F917C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBFDCA2448F237009F917C /* TimerViewController.swift */; };
@@ -23,7 +23,7 @@
 		DBB30CE9244EB740007B304E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		DBB30CEB244EBB82007B304E /* SalaryTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryTimer.swift; sourceTree = "<group>"; };
 		DBB30CED244EBBB8007B304E /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
-		DBD63E0B2449221A00F678A8 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		DBD63E0B2449221A00F678A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DBDBFDC32448F237009F917C /* SalaryCounter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalaryCounter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDBFDC62448F237009F917C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDBFDC82448F237009F917C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		DBD63E0D2449222000F678A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DBD63E0B2449221A00F678A8 /* TimeModel.swift */,
+				DBD63E0B2449221A00F678A8 /* Extensions.swift */,
 				DBB30CEB244EBB82007B304E /* SalaryTimer.swift */,
 				DBB30CED244EBBB8007B304E /* Interface.swift */,
 			);
@@ -163,7 +163,7 @@
 				DBDBFDCB2448F237009F917C /* TimerViewController.swift in Sources */,
 				DBB30CEE244EBBB8007B304E /* Interface.swift in Sources */,
 				DBDBFDC72448F237009F917C /* AppDelegate.swift in Sources */,
-				DBD63E0C2449221A00F678A8 /* TimeModel.swift in Sources */,
+				DBD63E0C2449221A00F678A8 /* Extensions.swift in Sources */,
 				DBDBFDC92448F237009F917C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

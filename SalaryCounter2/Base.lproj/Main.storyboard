@@ -11,7 +11,7 @@
         <!--Timer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TimerViewController" customModule="SalaryCounter2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerViewController" id="BYZ-38-t0r" customClass="TimerViewController" customModule="SalaryCounter2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,7 +251,6 @@
                                 </state>
                                 <connections>
                                     <action selector="toSpendButtonAction:" destination="9CF-wo-cSJ" eventType="touchUpInside" id="nRo-aq-1w5"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="2KW-9b-lgi"/>
                                 </connections>
                             </button>
                         </subviews>

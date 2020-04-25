@@ -23,7 +23,7 @@ class TimerViewController: UIViewController {
     
     @objc func counter() {
        let textForGSLPL = container!.moneyGatheredSinceLastPay + moneyGatheredSinceNow
-      gatheredSinceLastPayLabel.text = String(format: "%.0f", textForGSLPL)
+      gatheredSinceLastPayLabel.text = String(format: "%.2f", textForGSLPL)
       gatheredSinceNowLabel.text = String(format: "%.2f", self.moneyGatheredSinceNow)
             moneyGatheredSinceNow += container?.salaryPerSecond ?? 0.0
     }
@@ -41,8 +41,8 @@ class TimerViewController: UIViewController {
         toSpendButton.layer.borderColor = #colorLiteral(red: 0.8762342334, green: 0.8978926539, blue: 0.8111079335, alpha: 1)
         
         
-        dayLabel.text = dayDate()
-       monthLabel.text = monthDate()
+      dayLabel.text = Date().dayDate()
+      monthLabel.text = Date().monthDate()
       
         super.viewDidLoad()
      //

@@ -17,31 +17,33 @@ class EditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
+  
+  
 
-      @IBAction func toSpendButtonAction(_ sender: UIButton) {
-         guard  timer.setSalaryAmount(salaryAmountTextField.text) else {
+      @IBAction func toSpendButtonAction(_ sender: Any) {
+        guard  self.timer.setSalaryAmount(salaryAmountTextField.text) else {
              let alert = UIAlertController(title: "Внимание!", message: "В поле суммы зарплаты должно быть числовое значение, можно дробное.", preferredStyle: .alert)
              alert.addAction(UIAlertAction(title: "Ладно", style: .default, handler: nil))
              self.present(alert, animated: true, completion: nil)
              salaryAmountTextField.text = ""
              return
            }
-           guard timer.setDayOfSalary(dayOfSalaryTextField.text) else {
+        guard self.timer.setDayOfSalary(dayOfSalaryTextField.text) else {
              let alert = UIAlertController(title: "Внимание!", message: "В поле даты зарплаты должно быть значение от 1 до 28", preferredStyle: .alert)
                  alert.addAction(UIAlertAction(title: "Ладно", style: .default, handler: nil))
                  self.present(alert, animated: true, completion: nil)
                  dayOfSalaryTextField.text = ""
              return
            }
-           prepare(for: UIStoryboardSegue(identifier: "toTimerVC ", source: self, destination: TimerViewController()), sender: self)
+        
+        let destionation = storyboard?.instantiateViewController(identifier: "TimerViewController") as! TimerViewController
+        destionation.container = self.timer
+        destionation.modalPresentationStyle = .fullScreen
+        destionation.modalTransitionStyle = .coverVertical
+       present(destionation, animated: true, completion: nil)
      }
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       let destinationVC = segue.destination as? TimerViewController
-       destinationVC?.container = self.timer
-     }
+
      
-    
+   
 }
